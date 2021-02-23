@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Lowest Score In 2048 / The maximum score achieved was 794076. - Vervara</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Modified the learning rate of adam to 0.0001, it should reach 2048 in more than 60% of games.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Vervara" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Vervara</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Lowest Score In 2048 / The maximum score achieved was 794076.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://i.ytimg.com/vi/j3hGKRrzQr4/hqdefault.jpg"><img alt="2048 The Lowest Score Youtube If you only pay attention to one of these 2048 tips. youtube" src="https://i.ytimg.com/vi/j3hGKRrzQr4/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmu-vmqeFMq_tz9Q7BRsL2vGYs863qJ-93Og&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>480x360 - The highest tile i&#039;ve gotten is 1024. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x360</li> 
+    <mark>2048 The Lowest Score Youtube </mark> What is the lowest score you can get in 2048?
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.randalolson.com/wp-content/uploads/2048-ai-3rd-highest-tile-location.png"><img alt="How Ai Crushed All Human Records In 2048 Dr Randal S Olson The object of the game is to combine the numbers. randal s olson" src="http://www.randalolson.com/wp-content/uploads/2048-ai-3rd-highest-tile-location.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/fvgW9qyfF8UQir9XARnsB9jUGQhtZ22LJNRELXYNGRkd7Wrrer0UX0MpF6N89Vv-KeShnqkCOwtGEqWKJC3XwFri-7Z-f1nKNnbYyfEHgvhRDtdSbVZ8rzgvYzwVCGbzROOsWSkPuBGUZG0';"></a>
+		
+		<p style="text-align: center;"><b>635x492 - Implement a 2d sliding block puzzle game where blocks with numbers are combined to add their values. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 635x492</li> 
+    <mark>How Ai Crushed All Human Records In 2048 Dr Randal S Olson </mark> 2048 is a very addictive game available on desktop and mobile devices.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://s3.eu-west-2.amazonaws.com/cyberscoreproofs/Proofs/16430/1342155.jpg"><img alt="Best Score Reverse 2048 Video Game High Scores And Fast Times Cyberscore Me Uk Here are some tips and tricks on how to work your way up to a better score each and every the classic number game 2048 can be frustrating, but follow these six tips, and your scores will skyrocket! best score reverse 2048 video game" src="https://s3.eu-west-2.amazonaws.com/cyberscoreproofs/Proofs/16430/1342155.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGMbVNjMyKqsguLf-GmkRHd_1HWs7Q7ONwg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>576x757 - In this game you have 4×4 grid in which the numbers 2 and 4 randomly spawn. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 576x757</li> 
+    <mark>Best Score Reverse 2048 Video Game High Scores And Fast Times Cyberscore Me Uk </mark> As far as i know, this is the highest score achieved in 2048 without undos.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lh3.googleusercontent.com/z9CJ8R-oMcK9mZtAbRL9-aFS4MrXf3EP5sZKuUAbgshcAaOjOMog0zoul643UeRLhNgBfcrPCaJ7f2FSdpGlgQytBQ=w640-h400-e365-rj-sc0x00ffffff"><img alt="2048 Multiplayer Beta Chrome Web Store 2048 is a puzzle game in which the goal is to attain a 2048 tile within a 4x4 grid by moving tiles up, down, left, and right. 2048 multiplayer beta chrome web store" src="https://lh3.googleusercontent.com/z9CJ8R-oMcK9mZtAbRL9-aFS4MrXf3EP5sZKuUAbgshcAaOjOMog0zoul643UeRLhNgBfcrPCaJ7f2FSdpGlgQytBQ=w640-h400-e365-rj-sc0x00ffffff" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_7_91po3E3oR__66MinCbt3r7c1algwsIw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x400 - My high score is 15,396. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x400</li> 
+    <mark>2048 Multiplayer Beta Chrome Web Store </mark> I have made a list of all the games are based on the same concept but have something unique.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://croor.files.wordpress.com/2014/03/2048-e1396029794520.png"><img alt="2048 Learning To Be Terse Earned 212 points in 2048. 2048 learning to be terse" src="https://croor.files.wordpress.com/2014/03/2048-e1396029794520.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5uCCx3L86HMotSXdbF5VG8WDop1QUX1w6g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>467x607 - I beat 2048 combine a tile into 2048 to win. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 467x607</li> 
+    <mark>2048 Learning To Be Terse </mark> I used the back button, so that may.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.cityam.com/wp-content/uploads/2019/05/2048continued-1-57ed595635f58-57ed5956442b3-1280x720.jpg"><img alt="Three New Ways To Play 2048 That You Never Thought Of Cityam Cityam Each time you make a move, another tile spawns. three new ways to play 2048 that you" src="https://www.cityam.com/wp-content/uploads/2019/05/2048continued-1-57ed595635f58-57ed5956442b3-1280x720.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK8Z6sWlaPufA7A7iZ6B7C91z8P6mnVowrNg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - This is me, trying to beat my previous highscore. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Three New Ways To Play 2048 That You Never Thought Of Cityam Cityam </mark> Perhaps even more impressive is how consistently the ai beats 2048.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/jyJdwVNYwdc/hqdefault.jpg"><img alt="2048 Highest Score 80k Full Game 8192 Tile 4096 2048 1024 So Close Youtube This means the game can be optimzed in two different to minimize moves in order to reach the fastest would basically be a game of golf. 2048 highest score 80k full game 8192 tile 4096 2048 1024 so close" src="https://i.ytimg.com/vi/jyJdwVNYwdc/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkFm22GOng_-pilXjYo46h2-ThDdUKFVihQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>480x360 - Score is based upon combining blocks, where as winning is based upon reaching the 2048 block. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x360</li> 
+    <mark>2048 Highest Score 80k Full Game 8192 Tile 4096 2048 1024 So Close Youtube </mark> If you&#039;ve beat 2048 and want more of a challenge, try to reach 2048 with the lowest score possible.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/45/41/ce/4541ce7725d173874ad218f448214e15.jpg"><img alt="Lowest 2048 Score This means the game can be optimzed in two different to minimize moves in order to reach the fastest would basically be a game of golf. pinterest" src="https://i.pinimg.com/originals/45/41/ce/4541ce7725d173874ad218f448214e15.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq8YB1wua4EUCWnlagEpJCsGxMg7vkDmjjzA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x1136 - 2048 web w/lowest winning score 1 for highscore.com. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x1136</li> 
+    <mark>Lowest 2048 Score </mark> If you&#039;ve beat 2048 and want more of a challenge, try to reach 2048 with the lowest score possible.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/ZBprh.png"><img alt="What Is The Optimal Algorithm For The Game 2048 Stack Overflow It&#039;s just a gauge of how long you can last without winning. optimal algorithm for the game 2048" src="https://i.stack.imgur.com/ZBprh.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRy3Mb36RqeuVfWz9K5wyy1g01DbpxlarC0w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>551x678 - The maximum score achieved was 794076. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 551x678</li> 
+    <mark>What Is The Optimal Algorithm For The Game 2048 Stack Overflow </mark> It&#039;s just a gauge of how long you can last without winning.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/pNEFG.png"><img alt="What Is The Optimal Algorithm For The Game 2048 Stack Overflow It may sometimes ended with an embarrassingly low score. optimal algorithm for the game 2048" src="https://i.stack.imgur.com/pNEFG.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPqyRkc9RK6fe3HS8rSYYdY1MTLw6R9jkw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1002x498 - My best score is 4676. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1002x498</li> 
+    <mark>What Is The Optimal Algorithm For The Game 2048 Stack Overflow </mark> You can choose to continue playing after reaching 2048, and several people have been able to get a 4096 tile.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/4000/1*lwhwCsuX_cOV8HiHH0UU4w.png"><img alt="2048 Classic Puzzle Game Made With Flutter By Ashlesh Pandey Medium 2048 is an exciting puzzle game that develops logic and strategic thinking. 2048 classic puzzle game made with" src="https://miro.medium.com/max/4000/1*lwhwCsuX_cOV8HiHH0UU4w.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyK2h08CgsToGmG8PKKApVYJYfSz3PUKjaA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2000x1000 - Since 2048&#039;s release about two weeks ago, many edited versions came out. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2000x1000</li> 
+    <mark>2048 Classic Puzzle Game Made With Flutter By Ashlesh Pandey Medium </mark> This is the lowest record ever in 2048 game.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://i.imgur.com/b1cpvmR.png"><img alt="Mediocre 2048 Scoreboard Thanks to it, you will be able to the maximum number of points that can be scored in the game is 3,932,100 (each 4 that falls out collect the tile with the maximum value in one of the lower corners and never use the upward. mediocre" src="http://i.imgur.com/b1cpvmR.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/q61h7g-zKFQTST1cqkMzEs7o6mxyJJJdHhF1bHV-0Km7xD90eO5chZPAjSAYYLE4DwanP2Yz';"></a>
+		
+		<p style="text-align: center;"><b>480x762 - I don&#039;t know, i got away at it at one point, but my friend who played a lot more got one tile higher than 2048 once, it was pretty cool. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x762</li> 
+    <mark>Mediocre 2048 Scoreboard </mark> So i recently got a smartphone and decided to beat the world record for lowest score of 12.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://preview.redd.it/shvdqadxiur41.jpg?auto=webp&amp;s=76fc492bc4906bf33ecb446027841c4094967203"><img alt="Quarantine Has Been Fun Community Binge And 2048 Easy Level I Know 2048 I don&#039;t know, i got away at it at one point, but my friend who played a lot more got one tile higher than 2048 once, it was pretty cool. community binge and 2048 easy level" src="https://preview.redd.it/shvdqadxiur41.jpg?auto=webp&amp;s=76fc492bc4906bf33ecb446027841c4094967203" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8gSoEF28sBTJOeQjBiue1chIAETM5fw1Khg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1080x2220 - Earned 212 points in 2048. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1080x2220</li> 
+    <mark>Quarantine Has Been Fun Community Binge And 2048 Easy Level I Know 2048 </mark> Merging two lower tier blocks together will give you the score of the higher tier block (score of +8 gained from merging two 4&#039;s).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://domaininvesting.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-01-at-2.34.00-PM.png"><img alt="What Is Your 2048 High Score Domaininvesting Com Set up a line of matches. what is your 2048 high score" src="https://domaininvesting.com/wp-content/uploads/2014/05/Screen-Shot-2014-05-01-at-2.34.00-PM.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczxAIxyIY0ok6PtJ7BsIbL0mPBi2XVg8r6Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>563x713 - The minimum score over all runs was 124024; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 563x713</li> 
+    <mark>What Is Your 2048 High Score Domaininvesting Com </mark> With a lot of undos.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media.recordsetter.com/7db8fe1d-df08-4616-b3cc-42ab75f2c5da_2048LowScore.mov_xl.jpg"><img alt="Lowest Score In 2048 Online World Record Samyie The average end score per starting position is calculated. lowest score in 2048 online world" src="https://media.recordsetter.com/7db8fe1d-df08-4616-b3cc-42ab75f2c5da_2048LowScore.mov_xl.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxYYU7LEhgQJUdjx__uvXzaz2g6gHFVQ8Tg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>800x600 - As far as i know, this is the highest score achieved in 2048 without undos. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 800x600</li> 
+    <mark>Lowest Score In 2048 Online World Record Samyie </mark> When you merge two similar.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media.recordsetter.com/2649a1bd-2a22-4ee2-8832-edeb7d73854c_2048_Lowest_Score_World_Record.mp4_1_xl.jpg"><img alt="Lowest Score In 2048 Online World Record Udaya Saman The rules are that on each turn the player must choose a direction (up, down, left or right) and all tiles move as far as possible in that direction, some more than others. 2048 online world record udaya saman" src="https://media.recordsetter.com/2649a1bd-2a22-4ee2-8832-edeb7d73854c_2048_Lowest_Score_World_Record.mp4_1_xl.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5kzZmzEZaQ75jVcoZXegXxlApsiNPNlOFFQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>800x600 - This is me, trying to beat my previous highscore. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 800x600</li> 
+    <mark>Lowest Score In 2048 Online World Record Udaya Saman </mark> The object of the game is to combine the numbers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.wikihow.com/images/thumb/1/1f/Beat-2048-Step-1-Version-6.jpg/v4-460px-Beat-2048-Step-1-Version-6.jpg"><img alt="How To Beat 2048 13 Steps With Pictures Wikihow Perhaps even more impressive is how consistently the ai beats 2048. how to beat 2048 13 steps with" src="https://www.wikihow.com/images/thumb/1/1f/Beat-2048-Step-1-Version-6.jpg/v4-460px-Beat-2048-Step-1-Version-6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuWoujTYSXiqn7lGCbdgfJshj6k2RYHzS2Dg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>460x345 - I have made a list of all the games are based on the same concept but have something unique. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 460x345</li> 
+    <mark>How To Beat 2048 13 Steps With Pictures Wikihow </mark> The highest score that anybody could get in 2048 game.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://news-cdn.softpedia.com/images/news2/If-You-Enjoyed-2048-Un2048-for-Windows-8-1-Is-Your-Next-Big-Challenge-442318-2.jpg"><img alt="If You Enjoyed 2048 Un2048 For Windows 8 1 Is Your Next Big Challenge Implement a 2d sliding block puzzle game where blocks with numbers are combined to add their values. enjoyed 2048 un2048 for windows 8 1" src="https://news-cdn.softpedia.com/images/news2/If-You-Enjoyed-2048-Un2048-for-Windows-8-1-Is-Your-Next-Big-Challenge-442318-2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwclHf9u7CT7xrX8ePKUFNbqmFPH2coFnCAg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - Join the numbers and get to the 2048 tile! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>If You Enjoyed 2048 Un2048 For Windows 8 1 Is Your Next Big Challenge </mark> I beat 2048 combine a tile into 2048 to win.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/K7S6G.jpg"><img alt="What Is The Largest Tile Possible In 2048 Puzzling Stack Exchange I used the back button, so that may. largest tile possible in 2048" src="https://i.stack.imgur.com/K7S6G.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0CfmsgiLrfJaxIzQy8IP8dlROK3Xby2ZwVA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>320x480 - What is the lowest score you can get in 2048? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 320x480</li> 
+    <mark>What Is The Largest Tile Possible In 2048 Puzzling Stack Exchange </mark> The highest score that anybody could get in 2048 game.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://pbs.twimg.com/media/B-4rEEiUMAAEYtx.png"><img alt="Thies C Arntzen On Twitter Beat My Lowest Score On 2048 Http T Co P3deirmqbe I don&#039;t know, i got away at it at one point, but my friend who played a lot more got one tile higher than 2048 once, it was pretty cool. twitter" src="https://pbs.twimg.com/media/B-4rEEiUMAAEYtx.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9TP0wF24GWct-1zmrfxIaWIwq0XUQLfNXJg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>675x1200 - 2048 is a sliding puzzle web game that can be played here, based on 1024 by veewo studios, and conceptually similar to threes by asher vollmer. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 675x1200</li> 
+    <mark>Thies C Arntzen On Twitter Beat My Lowest Score On 2048 Http T Co P3deirmqbe </mark> 2048 is a game where you have to combine tiles to make the number 2048.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://vervara.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/amrut-maqintosh-whisky-price-in-kerala/">Amrut Maqintosh Whisky Price In Kerala - It is the first single malt whisky to be made in india.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bounce-infiniti-mall-price/">Bounce Infiniti Mall Price : All prices are exclusive of gst.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/bounce-infiniti-mall-x-park/">Bounce Infiniti Mall X Park - Here are some of the largest malls in india that you can explore in 2020</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/elven-haircut/">Elven Haircut - The head of the cia from the earlier seasons of homeland looks and asian hair is unique in that it requires maintenance just to look good.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/i-m-no-longer-a-slave-to-fear-lyrics-and-chords/">I&amp;#039;m No Longer A Slave To Fear Lyrics And Chords - No longer slaves chords / audio (transposable):</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/judith-shekoni-eastenders/">Judith Shekoni Eastenders - Relocating to london at 18 she modelled around working in the uk including eastenders (bbc) and gritty hallmark drama the hidden city.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/kiss-romantic-shayari-in-urdu-for-husband/">Kiss Romantic Shayari In Urdu For Husband - Love poetry in urdu for husband</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/speech-chhata-rapata-sha-va-ja-maha-ra-ja-bha-shhanae-mara-tha/">Speech छत्रपती शिवाजी महाराज भाषण मराठी - अंगावर शहारे आणणारे शिवाजी महाराजांचा इतिहास वर्णन करणारे जबरदस्त भाषण.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/zodiac-sign-for-october-29/">Zodiac Sign For October 29 - It is often hard for your partner.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/best-diet-plan-to-build-muscle-and-lose-fat/">Best Diet Plan To Build Muscle And Lose Fat - Offset that by doing strength training.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Vervara.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
